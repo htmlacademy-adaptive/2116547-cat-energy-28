@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-    <base href="https://htmlacademy-adaptive.github.io/2116547-cat-energy-28/2/">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2116547-cat-energy-28/2/">
 </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img src="" width="" height"" alt="">
-      </a>
-      <a class="main-header__logo--log-text">
-        <img src="" width="" height"" alt="">
-      </a>
-      <nav class="nav__main">
-        <button class="main__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item" href="">
-              <a class="main-nav__link" href="">
-                подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+
+<body>
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="/img/header/logo.svg" width="33" height="37" alt="Логотип компании Кэт энерджи">
+    </a>
+    <a class="main-header__logo--log-text">
+      <img src="/img/header/logo-text.svg" width="101" height="18" alt="Логотип компании Кэт энерджи">
+    </a>
+    <nav class="nav__main">
+      <button class="main__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <main class="main-container">
-   <section class="pet-date">
-     <h1 class="pet-date__title">Подбор программы</h1>
-       <p class="pet-date__intro-text">Заполните анкету, и мы подберем
-      программу питания для вашего кота</p>
-        <h2 class="visually-hidden">Данные питомца</h2>
+    <section class="main-container__pet-date pet-date">
+      <h1 class="pet-date__title">Подбор программы</h1>
+      <p class="pet-date__intro-text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <h2 class="visually-hidden">Данные питомца</h2>
       <form class="pet-date__name-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="pet-date__name-field-form">
-          <span class="pet-date__name-title">имя<span/>
-          <input  class="pet-date__name-field" type="text" name="pet-name">
+          <span class="pet-date__name-title">имя</span>
+          <input class="pet-date__name-field" type="text" name="pet-name">
         </label>
       </form>
       <form class="pet-date__weight-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden">
-          <span class="pet-date__weight-title">Вес (кг):*<span/>
-            <input  class="pet-date__weight-field" type="number" name="pet-weight">
+          <span class="pet-date__weight-title">Вес (кг):*</span>
+          <input class="pet-date__weight-field" type="number" name="pet-weight">
         </label>
       </form>
       <form class="pet-date__age-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="pet-date__age-field-form">
-          <span class="pet-date__age-title">Возраст (лет):<span/>
-          <input  class="pet-date__age-field" type="number" name="pet-age">
+          <span class="pet-date__age-title">Возраст (лет):</span>
+          <input class="pet-date__age-field" type="number" name="pet-age">
         </label>
       </form>
       <form class="pet-date__form" action="https://echo.htmlacademy.ru/" method="get">
@@ -67,14 +69,16 @@
           <ul class="pet-date__list">
             <li class="pet-date__item">
               <label class="pet-date__control-radio">
-                <input class="visually-hidden control-input" type="radio" name="eating-program-type" value="weight-loss" checked>
+                <input class="visually-hidden control-input" type="radio" name="eating-program-type" value="weight-loss"
+                  checked>
                 <span class="pet-date__control-mark-radio"></span>
                 <span class="pet-date__control-label">похудение</span>
               </label>
             </li>
             <li class="pet-date__item">
               <label class="pet-date__control-radio">
-                <input class="visually-hidden control-input" type="radio" name="eating-program-type" value="weight-gain">
+                <input class="visually-hidden control-input" type="radio" name="eating-program-type"
+                  value="weight-gain">
                 <span class="pet-date__control-mark-radio"></span>
                 <span class="pet-date__control-label">Набор массы</span>
               </label>
@@ -90,28 +94,28 @@
         </fieldset>
       </form>
     </section>
-    <section class="owner-contacts">
+    <section class="main-container__owner-contacts owner-contacts">
       <h2 class="owner-contacts__title">Контактные данные (владельца кота)</h2>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="owner-contacts__form">
-            <span class="owner-contacts__input-title">E-mail:*</span>
-            <input class="field" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email" required>
-          </label>
-          </form>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-           <label class="owner-contacts__form">
-             <span class="owner-contacts__input-title">Телефон:*</span>
-             <input class="field" placeholder="8 (960) 900-60-90" type="phone" name="newsletter-email" required>
-           </label>
-        </form>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="owner-contacts__form">
+          <span class="owner-contacts__input-title">E-mail:*</span>
+          <input class="field" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email" required>
+        </label>
+      </form>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="owner-contacts__form">
+          <span class="owner-contacts__input-title">Телефон:*</span>
+          <input class="field" placeholder="8 (960) 900-60-90" type="number" name="newsletter-email" >
+        </label>
+      </form>
     </section>
     <section class="comment">
-      <h2 class="comment_title">Комментарий</h2>
+      <h2 class="comment__title">Комментарий</h2>
       <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="comment__form">
           <input class="field" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
         </label>
-     </form>
+      </form>
     </section>
     <section class="extra">
       <h2 class="extra__title">Дополнительно</h2>
@@ -147,37 +151,46 @@
               </label>
             </li>
           </ul>
-      </fieldset>
-      <a class="extra__button">отправить заявку</a>
-    </form>
-  </section>
-</main>
-<footer class="main-footer">
-  <a class="main-footer__logo--log-text">
-    <img src="" width="" height"" alt="">
-  </a>
-  <ul class="social-list">
-    <li class="social-list__item">
-      <a class="social-link" href="#">
-        <span class="visually-hidden">Вконтакте</span>
-      </a>
-    </li>
-    <li class="social-list__item">
-      <a class="social-link" href="#">
-        <span class="visually-hidden">you Tube</span>
-      </a>
-    </li>
-    <li class="social-list__item">
-      <a  class="social-link" href="#">
-        <span class="visually-hidden">Телеграм</span>
-      </a>
-    </li>
-  </ul>
-  <span>html-academy</span>
-  <a class="logo">
-    <img src="" width="" height"" alt="">
-  </a>
-</footer>
-</body>
+        </fieldset>
+        <a class="extra__button">отправить заявку</a>
+        <span class="extra__footnote">* — Обязательные поля</span>
+      </form>
+    </section>
+    <section class="main-container__contacts contacts">
+      <h2 class="contacts__company">Контакты компании</h2>
+      <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <img src="/img/main/map.jpg" width="320" height="362" alt="Карта с адресом компании">
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="main-footer__logo  main-footer__logo--logo-text">
+      <img src="/img/header/logo-text.svg" width="128" height="24" alt="Логотип компани Кэт Энерджи">
+    </a>
+    <ul class="main-foote__social-list social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img src="/img/footer/vk-icon-1.svg" width="26" height="17" alt="Вконтакте">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img src="/img/footer/you-yube-icon-2.svg" width="24" height="18" alt="you Tube">
+          <span class="visually-hidden">you Tube</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img src="/img/footer/telegram-icon-3.svg" width="19" height="17" alt="Телеграм">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+    </ul>
+    <span>html-academy</span>
+    <a class="main-footer__logo">
+      <img src="/img/header/logo-text.svg" width="27" height="34" alt="Логотип компани html-academy">
+    </a>
+  </footer>
+ </body>
 </html>
-
