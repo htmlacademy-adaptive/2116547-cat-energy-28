@@ -9,14 +9,14 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class=" main-header__logo">
       <img src="/img/header/logo.svg" width="33" height="37" alt="Логотип компании Кэт энерджи">
     </a>
-    <a class="main-header__logo--log-text">
+    <a class="main-header__logo main-header__logo--text">
       <img src="/img/header/logo-text.svg" width="101" height="18" alt="Логотип компании Кэт энерджи">
     </a>
-    <nav class="nav__main">
-      <button class="main__toggle" type="button">
+    <nav class="main-header__main-nav main-nav">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -41,148 +41,134 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="main-container__pet-date pet-date">
-      <h1 class="pet-date__title">Подбор программы</h1>
-      <p class="pet-date__intro-text">Заполните анкету, и мы подберем
+    <section class="main-container__input input">
+      <h1 class="input__title">Подбор программы</h1>
+      <p class="input__intro-text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <h2 class="visually-hidden">Данные питомца</h2>
-      <form class="pet-date__name-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="pet-date__name-field-form">
-          <span class="pet-date__name-title">имя</span>
-          <input class="pet-date__name-field" type="text" name="pet-name">
-        </label>
-      </form>
-      <form class="pet-date__weight-form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="input__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden">
-          <span class="pet-date__weight-title">Вес (кг):*</span>
-          <input class="pet-date__weight-field" type="number" name="pet-weight">
+          <span class="input__title">имя</span>
+          <input class="input__field" type="text" name="pet-name">
         </label>
-      </form>
-      <form class="pet-date__age-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="pet-date__age-field-form">
-          <span class="pet-date__age-title">Возраст (лет):</span>
-          <input class="pet-date__age-field" type="number" name="pet-age">
+        <label class="visually-hidden">
+          <span class="input__title">Вес (кг):*</span>
+          <input class="input__field" type="number" name="pet-weight">
         </label>
-      </form>
-      <form class="pet-date__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="pet-date__radio">
-          <ul class="pet-date__list">
-            <li class="pet-date__item">
-              <label class="pet-date__control-radio">
+        <label class="visually-hidden">
+          <span class="input__title">Возраст (лет):</span>
+          <input class="input__field" type="number" name="pet-age">
+        </label>
+        <fieldset class="radio">
+          <ul class="radio__list">
+            <li class="radio__item">
+              <label class="radio__control-radio">
                 <input class="visually-hidden control-input" type="radio" name="eating-program-type" value="weight-loss"
                   checked>
-                <span class="pet-date__control-mark-radio"></span>
-                <span class="pet-date__control-label">похудение</span>
+                <span class="radio__control-mark-radio"></span>
+                <span class="radio__control-label">похудение</span>
               </label>
             </li>
-            <li class="pet-date__item">
-              <label class="pet-date__control-radio">
+            <li class="radio__item">
+              <label class="radio__control-radio">
                 <input class="visually-hidden control-input" type="radio" name="eating-program-type"
                   value="weight-gain">
-                <span class="pet-date__control-mark-radio"></span>
-                <span class="pet-date__control-label">Набор массы</span>
+                <span class="radio__control-mark-radio"></span>
+                <span class="radio__control-label">Набор массы</span>
               </label>
             </li>
-            <li class="pet-date__item">
-              <label class="pet-date__control-radio">
+            <li class="radio__item">
+              <label class="radio__control-radio">
                 <input class="visually-hidden control-input" type="radio" name="eating-program-type" value="unknown">
-                <span class="pet-date__control-mark-radio"></span>
-                <span class="pet-date__control-label">Не знаю (Нужен ваш совет)</span>
+                <span class="radio__control-mark-radio"></span>
+                <span class="radio__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
-      </form>
     </section>
-    <section class="main-container__owner-contacts owner-contacts">
-      <h2 class="owner-contacts__title">Контактные данные (владельца кота)</h2>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="owner-contacts__form">
-          <span class="owner-contacts__input-title">E-mail:*</span>
-          <input class="field" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email" required>
-        </label>
-      </form>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="owner-contacts__form">
-          <span class="owner-contacts__input-title">Телефон:*</span>
-          <input class="field" placeholder="8 (960) 900-60-90" type="number" name="newsletter-email" >
-        </label>
-      </form>
+    <section class="main-container__input input">
+      <h2 class="input__title">Контактные данные (владельца кота)</h2>
+      <label class="input__form">
+        <span class="input__title">E-mail:*</span>
+        <input class="input__field" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email" required>
+      </label>
+      <label class="input__form">
+        <span class="input__input-title">Телефон:*</span>
+        <input class="input__field" placeholder="8 (960) 900-60-90" type="number" name="newsletter-email">
+      </label>
     </section>
-    <section class="comment">
-      <h2 class="comment__title">Комментарий</h2>
-      <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="comment__form">
-          <input class="field" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
-        </label>
-      </form>
+    <section class="comment-input">
+      <h2 class="comment-input__title">Комментарий</h2>
+      <label class="comment-input__form">
+        <input class="comment-input__field" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
+      </label>
     </section>
-    <section class="extra">
+    <section class="main-container__extra extra">
       <h2 class="extra__title">Дополнительно</h2>
-      <form class="extra__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="extra__checkbox">
-          <ul class="extra__list">
-            <li class="extra__item">
-              <label class="control-checkbox">
-                <input class="visually-hidden control-input" type="checkbox" name="sweetener" checked>
-                <span class="control-mark-checkbox"></span>
-                <span class="control-label">сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="control-checkbox">
-                <input class="visually-hidden control-input" type="checkbox" name="drinking-water" checked>
-                <span class="control-mark-checkbox"></span>
-                <span class="control-label">питьевая вода</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="control-checkbox">
-                <input class="visually-hidden control-input" type="checkbox" name="milk">
-                <span class="control-mark-checkbox"></span>
-                <span class="control-label">молоко</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="control-checkbox">
-                <input class="visually-hidden control-input" type="checkbox" name="vitamins">
-                <span class="control-mark-checkbox"></span>
-                <span class="control-label">витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <a class="extra__button">отправить заявку</a>
-        <span class="extra__footnote">* — Обязательные поля</span>
+      <fieldset class="extra__checkbox">
+        <ul class="extra__list">
+          <li class="extra__item">
+            <label class="extra__control-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="sweetener" checked>
+              <span class="extra__control-mark-checkbox"></span>
+              <span class="extra__control-label">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="extra__item">
+            <label class="extra__control-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="drinking-water" checked>
+              <span class="extra__control-mark-checkbox"></span>
+              <span class="extra__control-label">питьевая вода</span>
+            </label>
+          </li>
+          <li class="extra__item">
+            <label class="extra__control-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="milk">
+              <span class="extra__control-mark-checkbox"></span>
+              <span class="extra__control-label">молоко</span>
+            </label>
+          </li>
+          <li class="extra__item">
+            <label class="extra__control-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="vitamins">
+              <span class="extra__control-mark-checkbox"></span>
+              <span class="extra__control-label">витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <a class="extra__button">отправить заявку</a>
+      <span class="extra__footnote">* — Обязательные поля</span>
       </form>
-    </section>
-    <section class="main-container__contacts contacts">
-      <h2 class="contacts__company">Контакты компании</h2>
-      <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img src="/img/main/map.jpg" width="320" height="362" alt="Карта с адресом компании">
-    </section>
+      </section>
+      <section class="main-container__contacts contacts">
+        <h2 class="contacts__company">Контакты компании</h2>
+        <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <img src="/img/main/map.jpg" width="320" height="362" alt="Карта с адресом компании">
+      </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo  main-footer__logo--logo-text">
+    <a class=" main-footer__logo  main-footer__logo--text">
       <img src="/img/header/logo-text.svg" width="128" height="24" alt="Логотип компани Кэт Энерджи">
     </a>
-    <ul class="main-foote__social-list social">
-      <li class="social__item">
+    <ul class="main-footer__social-list social">
+      <li class="social__item social__item--vk">
         <a class="social__link" href="#">
           <img src="/img/footer/vk-icon-1.svg" width="26" height="17" alt="Вконтакте">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--you-Tube">
+        <img src="/img/footer/you-yube-icon-2.svg" width="24" height="18" alt="you Tube">
         <a class="social__link" href="#">
-          <img src="/img/footer/you-yube-icon-2.svg" width="24" height="18" alt="you Tube">
           <span class="visually-hidden">you Tube</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--telegram">
+        <img src="/img/footer/telegram-icon-3.svg" width="19" height="17" alt="Телеграм">
         <a class="social__link" href="#">
-          <img src="/img/footer/telegram-icon-3.svg" width="19" height="17" alt="Телеграм">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
